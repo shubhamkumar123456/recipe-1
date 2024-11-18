@@ -42,7 +42,7 @@ const ViewRecipe = () => {
   return (
     <div className='pt-2'>
         
-        <div className='flex gap-6  w-[80%] m-auto mt-10'>
+        <div className='flex gap-6 sm:flex-row flex-col items-center justify-center  w-[80%] m-auto mt-10'>
           <div className="left">
             <img src={location.state.image} alt="" />
           </div>
@@ -54,7 +54,7 @@ const ViewRecipe = () => {
           </div>
         </div>
 
-        <div className='my-2 p-3 w-[80%] m-auto flex gap-9'>
+        <div className='my-2 p-3 w-[80%] m-auto flex sm:flex-row flex-col items-center justify-center gap-9'>
           <ul className='list-disc ' type="disk">
             <b>Ingredients</b>
             {

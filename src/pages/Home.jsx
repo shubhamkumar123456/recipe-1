@@ -36,9 +36,9 @@ const Home = () => {
 
   return (
   <div className='pt-10  bg-black'>
-      <form action="" className='w-[50%] m-auto flex justify-center gap-5'>
-        <input ref={searchRef} className='p-3 w-[250px] rounded-md border border-red-300 outline-none' type="text" placeholder='search recipe...'/>
-        <button onClick={handleSearch}  type='button' className='bg-green-300 hover:bg-green-700 w-[120px] rounded-lg'>search</button>
+      <form action="" className='sm:w-[50%] p-4 m-auto flex sm:flex-row flex-col items-center justify-center gap-5'>
+        <input ref={searchRef} className='p-3 sm:w-[250px] w-full  rounded-md border border-red-300 outline-none' type="text" placeholder='search recipe...'/>
+        <button onClick={handleSearch}  type='button' className='bg-green-300 py-2 px-3 sm:w-[120px] h-[40px] w-max hover:bg-green-700  rounded-lg'>search</button>
       </form>
 <div  className='grid grid-cols-12 gap-2 p-8'>
       {/* <h3>home page</h3> */}
@@ -62,7 +62,7 @@ const Home = () => {
             </CardContent>
             <CardActions>
               {/* <Button size="small">Share</Button> */}
-              <Link state={ele.recipe} to={'/view'} size="small">View recipe</Link>
+              <Link className='bg-indigo-950 text-white px-3 py-2 rounded-md' state={ele.recipe} to={'/view'} size="small">View recipe</Link>
               {/* <button onClick={()=>handleClick(ele)}>click me</button> */}
 
             </CardActions>
